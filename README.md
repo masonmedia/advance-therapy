@@ -12,7 +12,7 @@ The site uses custom css classes built around an atomic/functional css approach.
 
 1. jQuery slideDown effect with hide and show functionality is the basis of the site layout. Each panel when clicked drops down to reveal hidden content.
 
-2. Page scroll to ID: an excellent library by Malihu provides jquery smooth scrolling. This library is particularly smooth and used for its simplicity and results.
+2. Page scroll to ID: an excellent library by Malihu provides jquery smooth scrolling. This library is particularly smooth and is recommended for its simplicity and and ease of use.
 
 See [manos.malihu.gr](http://manos.malihu.gr)
 
