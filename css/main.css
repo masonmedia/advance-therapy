@@ -1,0 +1,1461 @@
+	/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* global */
+
+body {
+	font-family: helvetica neue, helvetica;
+	overflow-x: hidden;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+a:hover {
+	color: #fff;
+	text-shadow: 0 0 5px #000, 0 0 10px #000;
+	font-weight: 900;
+	cursor: pointer;
+	text-decoration: overline;
+}
+.button {
+	height: 53px;
+	width: 126px;
+	padding: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	color: grey;
+	color: rgba(0, 0, 0, 0.5);
+	background: #ffffff;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 10px auto;
+	border: 3px solid #000000;
+	border: 3px solid rgba(0, 0, 0, 0.5);
+}
+.btn1 {
+	display: block;
+	margin: 20px auto;
+	height: 53px;
+	width: 126px;
+	padding: 16px;
+	font-family: Impact, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 16px;
+	color: grey;
+	color: rgba(0, 0, 0, 0.5);
+	border: 2px solid grey;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 3px #000;
+	box-shadow: 0 0 3px #000;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(173, 216, 230, 0.5)), to(rgba(255, 255, 255, 0.5)));
+	background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0.5));
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.btn1:hover {
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	background: #77c9d4;
+	background: rgba(119, 201, 212, 1);
+	border: 4px solid #fff;
+	border-radius: 5px;
+	-webkit-transform: translate(10px, 0) scale(1.1);
+	transform: translate(10px, 0) scale(1.1);
+}
+
+/* flexbox */
+
+.flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.flex-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 200px;
+	flex: 1 0 200px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	padding: 20px;
+}
+
+/* media object for Philosophy section */
+
+.media-flex-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+.media-flex-item {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 25px;
+	flex: 1 0 200px;
+}
+.border--top {
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+.border--bottom {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.Media {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+.Media-figure {
+	border: 3px solid skyblue;
+	border-radius: 10px;
+	padding: 15px;
+	background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0.5));
+	box-shadow: 0 0 3px #000;
+	margin: 20px 20px 20px 0;
+}
+.Media-body {
+	flex: 1;
+	padding: 10px 0;
+}
+.media-flex-item p {
+	font-family: Chalkduster, fantasy, sans-serif;
+}
+.media-flex-item .fa {
+	-webkit-text-stroke: 2px skyblue;
+}
+
+/* grid css for proto grid page layout */
+
+.grid {
+	min-height: 30vh;
+}
+
+/* nav */
+
+#nav-1 {
+	display: none;
+}
+#nav-2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row;
+	flex-flow: row;
+	min-height: 50px;
+	font-family: Trebuchet MS, helvetica neue, helvetica;
+	font-weight: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	background-size: cover;
+	background-position: center;
+	color: rgb(119, 201, 212);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+	z-index: 100;
+}
+nav .flex-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row;
+	flex-flow: row;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.logo {
+	background: url(/img/Advance-Therapy-Logo.png);
+	background-size: cover;
+	height: 45px;
+	width: 45px;
+	padding: 0;
+}
+#nav-menu .branding {
+	font-size: 4.5vmin;
+}
+nav a {
+	padding: 4px 10px;
+	font-size: 3vmin;
+	letter-spacing: -1px;
+}
+nav span {
+	color: rgba(0, 102, 0, 1);
+	font-weight: 900;
+}
+
+/* The side navigation menu */
+
+.sidenav {
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 100;
+	/* Stay on top */
+	top: 0;
+	left: 0;
+	background: url(https://s-media-cache-ak0.pinimg.com/originals/79/ec/1a/79ec1acb7aafe6eae63ecfcdd7a1a422.jpg) center top;
+	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+	background-size: cover;
+	opacity: 0.9;
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 60px;
+	/* Place content 60px from the top */
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: rgba(0, 102, 0, 1);
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+	background: rgba(0, 102, 0, 0.5);
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.sidenav .closebtn:hover {
+	background: none;
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* hamburger nav */
+
+nav .fa {
+	float: none;
+	padding: 12px;
+	border: 3px solid;
+	border-radius: 3px;
+	margin-right: 15px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+nav .fa:hover {
+	color: rgb(119, 201, 212);
+	border: 3px solid;
+	background: rgba(255, 255, 255, 0.4);
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	-webkit-transform: scale(1.1) rotate(90deg);
+	transform: scale(1.1) rotate(90deg);
+	cursor: pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+	-webkit-transition: margin-left .5s;
+	transition: margin-left .5s;
+	/* padding: 20px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 500px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 17px;
+	}
+}
+
+/* header */
+
+.banner {
+	height: 100vh;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	font-family: trebuchet MS, helvetica neue;
+	text-align: center;
+	line-height: 140%;
+	letter-spacing: -9px;
+	background: url(http://img-cdn.jg.jugem.jp/e93/1699577/20100911_1153396.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* photo credits: 
+green geometric banner: http://www.chungcugoldenland.info/download/44888459.html
+green ios banner: https://freeios7.com/minimal/page/40/ and
+https://freeios7.com/download/freeios7.com_apple_wallpaper_aqua-green_ipad_retina.jpg
+*/
+
+.banner .fa {
+	color: #fff;
+	text-shadow: 0 0 5px #000, 0 0 5px #000;
+	margin-top: 40px;
+}
+.banner-thumbnail {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	background: url(http://atherapy.andrewmasonmedia.com/wp-content/uploads/2017/02/cropped-AT-logo-5-transparent.png);
+	background-size: cover;
+	background-position: center;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+.thumbnail {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.7);
+	background-size: cover;
+	border-radius: 15px;
+	padding: 20px;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+.banner h1 {
+	font-size: 16vmin;
+	font-weight: 100;
+	margin: 30px auto;
+	color: #fff;
+	text-decoration: none;
+	/*    color: rgba(0, 102, 0, 1); */
+	text-shadow: 0 0 5px #000, 0 0 10px #000;
+	font-weight: 900;
+	line-height: 77%;
+}
+.banner-border {
+	border: 20px solid rgba(255, 255, 255, 0.3);
+	-o-border-image: url(https://static.pexels.com/photos/1848/nature-sunny-red-flowers.jpg) 100 round;
+	border-image: url(https://static.pexels.com/photos/1848/nature-sunny-red-flowers.jpg) 100 round;
+	padding: 8% 16%;
+}
+.banner h1 span {
+	font-weight: 900;
+	color: #fff;
+	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-shadow: 0 0 5px #000, 0 0 10px #000;
+}
+
+/* slider */
+
+.slider {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	max-width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+}
+.slider h1 {
+	font-family: trebuchet MS, helvetica neue, sans-serif;
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -9px;
+	text-align: center;
+	margin: 30px auto;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 5px #000, 0 0 10px #000;
+	line-height: 77%;
+}
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.slide1 {
+	background: url(/img/advance-slide-1.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade 8s infinite;
+	-webkit-animation: fade 8s infinite;
+}
+.slide2 {
+	background: url(/img/advance-slide-2.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade2 8s infinite;
+	-webkit-animation: fade2 8s infinite;
+}
+.slide3 {
+	background: url(/img/advance-slide-3.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade3 8s infinite;
+	-webkit-animation: fade3 8s infinite;
+}
+
+/* original slider images:
+slide-1:  http://img-cdn.jg.jugem.jp/e93/1699577/20100911_1153396.jpg
+slide-2:  https://freeios7.com/download/freeios7.com_apple_wallpaper_aqua-green_ipad_retina.jpg
+slide-3:  https://static.pexels.com/photos/7466/pexels-photo.jpeg
+*/
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 1
+	}
+	33.333% {
+		opacity: 0
+	}
+	66.666% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 1
+	}
+	33.333% {
+		opacity: 0
+	}
+	66.666% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+@-webkit-keyframes fade2 {
+	0% {
+		opacity: 0
+	}
+	33.333% {
+		opacity: 1
+	}
+	66.666% {
+		opacity: 0
+	}
+	100% {
+		opacity: 0
+	}
+}
+@keyframes fade2 {
+	0% {
+		opacity: 0
+	}
+	33.333% {
+		opacity: 1
+	}
+	66.666% {
+		opacity: 0
+	}
+	100% {
+		opacity: 0
+	}
+}
+@-webkit-keyframes fade3 {
+	0% {
+		opacity: 0
+	}
+	33.333% {
+		opacity: 0
+	}
+	66.666% {
+		opacity: 1
+	}
+	100% {
+		opacity: 0
+	}
+}
+@keyframes fade3 {
+	0% {
+		opacity: 0
+	}
+	33.333% {
+		opacity: 0
+	}
+	66.666% {
+		opacity: 1
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+/* text align */
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+
+/* border */
+
+.border {
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px 60px 5px 5px;
+	-webkit-box-shadow: 0 0 10px #444;
+	box-shadow: 0 0 10px #444;
+}
+.border-top {
+	border-top: 2px solid #000;
+	padding-top: 10px;
+}
+
+/* sections */
+
+.flip,
+.flip-2,
+.flip-3,
+.flip-4,
+.flip-5,
+.flip-6 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 50px;
+	text-align: left;
+	color: #fff;
+}
+.wrapper, 
+.wrapper:focus,
+.wrapper:active,
+.wrapper:visited {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        border: 2px solid;
+	background: rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 5px #000;
+        padding: 30px 40px;
+        transition: all .3s ease-in-out;
+        width: 100%;
+}
+.wrapper:hover {
+        background: rgba(0,0,0,0.5);
+}
+
+.panel,
+.panel-2,
+.panel-3,
+.panel-4,
+.panel-5,
+.panel-6 {
+	padding: 50px;
+	display: none;
+	text-align: left;
+	background: url(/img/advance-slide-1.jpg);
+	background-size: cover;
+	border: solid 1px #c3c3c3;
+	font-weight: 500;
+}
+.margin {
+	margin: 10px;
+}
+
+/* text + headlines */
+
+.flip h1,
+.flip-2 h1,
+.flip-3 h1,
+.flip-4 h1,
+.flip-5 h1,
+.flip-6 h1 {
+        font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -3px;
+        transition: all 0.4s ease-in-out;
+        width: 100%;
+}
+.selected {
+color: rgb(119, 201, 212);
+text-shadow: 2px 1px #fff, 4px 2px #fff, 0 0 5px #000;
+}
+
+.flip h1 span,
+.flip-2 h1 span,
+.flip-3 h1 span,
+.flip-4 h1 span,
+.flip-5 h1 span,
+.flip-6 h1 span {
+	font-weight: 100;
+	letter-spacing: -1px;
+}
+.panel h1,
+.panel-2 h1,
+.panel-3 h1,
+.panel-4 h1,
+.panel-5 h1,
+.panel-6 h1 {
+	border-bottom: 2px solid;
+	letter-spacing: -1px;
+}
+.panel span,
+.panel-2 span,
+.panel-3 span,
+.panel-4 span,
+.panel-5 span,
+.panel-6 span {
+	font-weight: 100;
+}
+#therapists .panel-3 a {
+	font-weight: 900;
+	font-size: 18px;
+	font-family: Courier New, monospace;
+	text-transform: uppercase;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+#therapists .panel-3 a:hover {
+	font-weight: 900;
+	color: #fff;
+}
+.panel-4 .flex-item,
+.panel-6 .flex-item {
+	font-family: Chalkduster, fantasy, sans-serif;
+}
+.panel-5 .flex-container .flex-item p {
+	padding: 0 0 20px 0;
+	margin-top: 0;
+}
+.panel-5 .price {
+	font-weight: 900;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(173, 216, 230, 0.5)), to(rgba(255, 255, 255, 0.5)));
+	background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0.5));
+	padding: 10px 25px;
+	font-style: italic;
+	-webkit-box-shadow: 0 0 10px #444;
+	box-shadow: 0 0 10px #444;
+}
+
+/* colors */
+
+.feather {
+	background: #77C9D4;
+	/* rgb(119, 201, 212) */
+}
+.marine {
+	background: #57BC90;
+	/* rgb(87, 188, 144) */
+}
+.forest {
+	background: #015249;
+	/* rgb(1, 82, 73) */
+}
+.grey {
+	background: #A5A5AF;
+	/* rgb(165, 165, 175) */
+}
+.feather-light {
+	background: rgba(119, 201, 212, 0.2);
+}
+.marine-light {
+	background: rgba(87, 188, 144, 0.2);
+}
+.forest-light {
+	background: rgba(1, 82, 73, 0.2);
+}
+
+/* background imgs */
+
+
+/* original images:
+    banner:  https://static.pexels.com/photos/320517/pexels-photo-320517.jpeg
+    about:  https://static.pexels.com/photos/195399/pexels-photo-195399.jpeg
+    philosophy:  https://static.pexels.com/photos/39315/lotus-pink-nature-flowers-39315.jpeg
+    therapists:  https://static.pexels.com/photos/398532/pexels-photo-398532.jpeg
+    services:  https://static.pexels.com/photos/164531/pexels-photo-164531.jpeg
+    driving:  http://www.publicdomainpictures.net/pictures/140000/velka/driving-through-bay-bridge.jpg
+    contact:  https://static.pexels.com/photos/220197/pexels-photo-220197.jpeg
+    footer:  https://s-media-cache-ak0.pinimg.com/736x/a5/6f/25/a56f25943a77d1126595f283913bda36.jpg
+*/
+
+.bg-about {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(119, 201, 212, 1)), color-stop(rgba(119, 201, 212, 0.5)), to(rgba(119, 201, 212, 0))), url(/img/advance-therapy-about.jpg) center;
+	background: linear-gradient(to right, rgba(119, 201, 212, 1), rgba(119, 201, 212, 0.5), rgba(119, 201, 212, 0)), url(/img/advance-therapy-about.jpg) center;
+	background-size: 120%;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-about:hover {
+	background-size: 100%;
+}
+.bg-philosophy {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(87, 188, 144, 1)), color-stop(rgba(87, 188, 144, 0.5)), to(rgba(87, 188, 144, 0))), url(/img/advance-therapy-philosophy.jpg);
+	background: linear-gradient(to right, rgba(87, 188, 144, 1), rgba(87, 188, 144, 0.5), rgba(87, 188, 144, 0)), url(/img/advance-therapy-philosophy.jpg);
+	background-size: 120%;
+	background-position: center;
+	background-attachment: scroll;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-philosophy:hover {
+	background-size: 100%;
+}
+.bg-therapists {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(1, 82, 73, 1)), color-stop(rgba(1, 82, 73, 0.5)), to(rgba(1, 82, 73, 0))), url(/img/advance-therapy-therapists.jpg);
+	background: linear-gradient(to right, rgba(1, 82, 73, 1), rgba(1, 82, 73, 0.5), rgba(1, 82, 73, 0)), url(/img/advance-therapy-therapists.jpg);
+	background-size: 120%;
+	background-position: center 30%;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-therapists:hover {
+	background-size: 100%;
+}
+.bg-services {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(165, 165, 175, 1)), color-stop(rgba(165, 165, 175, 0.5)), to(rgba(165, 165, 175, 0))), url(/img/advance-therapy-services.jpg);
+	background: linear-gradient(to right, rgba(165, 165, 175, 1), rgba(165, 165, 175, 0.5), rgba(165, 165, 175, 0)), url(/img/advance-therapy-services.jpg);
+	background-size: 120%;
+	background-position: center;
+	background-attachment: scroll;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-services:hover {
+	background-size: 100%;
+}
+.bg-driving {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/img/advance-therapy-driveadvance.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/img/advance-therapy-driveadvance.jpg);
+	background-size: 120%;
+	background-position: center;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-driving:hover {
+	background-size: 100%;
+}
+.bg-contact {
+	background: url(/img/advance-therapy-contact.jpg);
+	background-size: 120%;
+	background-position: center;
+	background-attachment: scroll;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.bg-contact:hover {
+	background-size: 100%;
+}
+
+/* single page grid layout (unused) */
+
+#page-grid .flex-item h1,
+#page-grid .flex-item p {
+	text-align: left;
+	color: #fff;
+	text-shadow: 0 0 5px #444;
+	margin: 10px;
+}
+#page-grid .flex-item h1 {
+	line-height: 100%;
+	border-bottom: 3px solid;
+	width: 50px;
+	padding-bottom: 10px;
+}
+#page-grid .flex-item p {
+	margin: 5px;
+	line-height: 120%;
+}
+.page-headline {
+	font-family: Trebuchet MS;
+	font-size: 12vmin;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	-webkit-text-stroke: 5px skyblue;
+}
+
+/* font awesome icons */
+
+.fa-angle-double-right,
+.fa-chevron-circle-right,
+.fa-chevron-right,
+.fa-caret-square-o-right {
+	float: right;
+	color: #fff;
+	padding: 5px;
+	margin: 5px 10px 0 0;
+	transition: all .3s ease;
+	font-size: 50px;
+	font-weight: 100;
+}
+.fa-angle-double-right:hover,
+.fa-chevron-circle-right:hover,
+.fa-chevron-right:hover,
+.fa-caret-square-o-right:hover {
+	color: #000;
+	text-shadow: 0 0 10px #fff;
+	font-weight: 900;
+}
+.fa-car {
+	float: right;
+	margin: 0 10px 5px 0;
+}
+.rotated {
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	/* IE 9 */
+	-moz-transform: rotate(90deg);
+	/* Firefox */
+	-webkit-transform: rotate(90deg);
+	/* Safari and Chrome */
+	-o-transform: rotate(90deg);
+	/* Opera */
+}
+#services .fa-lg {
+	font-size: 25px;
+	width: 24px;
+	padding: 18px;
+	margin-bottom: 10px;
+	border: 3px solid skyblue;
+	border-radius: 20px 3px 3px;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(173, 216, 230, 0.5)), to(rgba(255, 255, 255, 0.5)));
+	background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0.5));
+	-webkit-text-stroke: 1px skyblue;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+.fa-asterisk,
+.fa-globe,
+.fa-envelope,
+.fa-phone-square {
+	float: none;
+	padding: 0;
+}
+footer .fa {
+	padding: 3px 5px;
+	font-weight: bold;
+}
+
+/* footer */
+
+footer {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(255, 255, 255, 0.45))), url(/img/advance-therapy-footer.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.45)), url(/img/advance-therapy-footer.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 50vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+footer .thumbnail {
+	background: rgba(255, 255, 255, 0.7);
+	background-size: cover;
+	border-radius: 15px;
+	padding: 20px;
+	height: 50px;
+	width: 50px;
+	margin: 6px auto;
+	-webkit-box-shadow: 0 0 10px;
+	box-shadow: 0 0 10px
+}
+footer p {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	color: #fff;
+	font-family: Trebuchet MS, helvetica neue, helvetica;
+	font-weight: 900;
+	letter-spacing: -1px;
+	padding: 10px;
+	margin: 10px auto;
+	margin-bottom: 0;
+	width: 200px;
+	border: 2px solid #015249;
+	text-shadow: 0 0 3px #000, 0 0 5px #000;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+footer p:hover {
+	background: rgba(1, 82, 73, 0.4);
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	border: 2px solid #fff;
+}
+footer .light {
+	font-family: Helvetica neue, helvetica, sans-serif;
+	font-weight: 900;
+	border: none;
+	margin: 0 auto;
+	background: none;
+	letter-spacing: 0;
+	color: #fff;
+	text-shadow: 0 0 1px #000, 0 0 3px #000;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+footer .light:hover {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(1, 82, 73, 0.9)), to(rgba(255, 255, 255, 0.9)));
+	background: linear-gradient(to right, rgba(1, 82, 73, 0.9), rgba(255, 255, 255, 0.9));
+	border: none;
+}
+footer .light span {
+	color: #015249;
+	text-shadow: 0 0 3px #fff;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+footer .fa {
+	float: none;
+	margin: 0;
+	color: rgba(1, 82, 73, 1);
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+footer .fa:hover {
+	color: #000;
+	text-shadow: 0 0 10px #fff;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1920px) {
+}
+@media screen and (min-width: 1366px) {
+}
+@media screen and (max-width: 1112px) {
+}
+	@media screen and (max-width: 1024px) {
+		.slider h1 {
+			font-size: 12vmin;
+		}
+	}
+	@media screen and (max-width: 768px) {
+.flip h1, .flip-2 h1, .flip-3 h1, .flip-4 h1, .flip-5 h1, .flip-6 h1 {
+font-size: 42px;
+ }
+
+		.fa-angle-double-right,
+		.fa-chevron-circle-right,
+		.fa-chevron-right,
+		.fa-caret-square-o-right {
+			font-size: 42px;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		.panel h1,
+		.panel-2 h1,
+		.panel-3 h1,
+		.panel-4 h1,
+		.panel-5 h1,
+		.panel-6 h1 {
+			border-bottom: 2px solid;
+			letter-spacing: -1px;
+			line-height: 100%;
+		}
+		.logo {
+			background: url(/img/Advance-Therapy-Logo.png);
+			background-size: cover;
+			height: 35px;
+			width: 35px;
+			padding: 0;
+		}
+		#nav-menu .branding {
+			margin-right: auto;
+			font-size: 5vmin;
+		}
+		nav .branding:hover {
+			color: #fff;
+		}
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: rgba(0, 102, 0, 1);
+			display: block;
+			-webkit-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+		nav a {
+			padding: 4px 5px;
+			font-size: 3vmin;
+			letter-spacing: -1px;
+		}
+		.slider h1 {
+                        font-size: 70px;
+			font-weight: 900;
+			letter-spacing: -5px;
+			text-align: center;
+			margin: 30px auto;
+			color: #fff;
+			text-decoration: none;
+			text-shadow: 0 0 5px #000, 0 0 10px #000;
+			font-weight: 900;
+			line-height: 77%;
+		}
+		.panel-4 .word-break {
+			display: table;
+		}
+	}
+@media (max-width: 667px) {
+.flip,
+.flip-2,
+.flip-3,
+.flip-4,
+.flip-5,
+.flip-6 {
+padding: 30px 20px;
+ }
+.wrapper {
+padding: 30px;
+}
+.flip h1, .flip-2 h1, .flip-3 h1, .flip-4 h1, .flip-5 h1, .flip-6 h1 {
+margin-right: 20px;
+}
+}
+	@media screen and (max-width: 500px) {
+		.media-flex-item {
+			padding: 15px;
+		}
+		.fa-chevron-circle-right,
+		.fa-chevron-right {
+			margin: 0;
+			padding-right: 0;
+			font-size: 30px;
+		}
+		.slider h1 {
+                        font-size: 45px;
+			font-weight: 900;
+			letter-spacing: -4px;
+			text-align: center;
+			margin: 30px auto;
+			color: #fff;
+			text-decoration: none;
+			text-shadow: 0 0 5px #000, 0 0 10px #000;
+			line-height: 50%;
+		}
+		.flip h1,
+		.flip-2 h1,
+		.flip-3 h1,
+		.flip-4 h1,
+		.flip-5 h1,
+		.flip-6 h1 {
+			font-size: 37px;
+		}
+		#nav-menu .branding {
+			font-size: 6vmin;
+		}
+	}
+	@media screen and (max-width: 414px) {
+		.flip h1,
+		.flip-2 h1,
+		.flip-3 h1,
+		.flip-4 h1,
+		.flip-5 h1,
+		.flip-6 h1 {
+			font-size: 34px;
+		}
+		.fa-angle-double-right,
+		.fa-chevron-circle-right,
+		.fa-chevron-right,
+		.fa-caret-square-o-right {
+			padding-top: 10px;
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.flip h1,
+		.flip-2 h1,
+		.flip-3 h1,
+		.flip-4 h1,
+		.flip-5 h1,
+		.flip-6 h1 {
+			font-size: 30px;
+		}
+		.fa-angle-double-right,
+		.fa-chevron-circle-right,
+		.fa-chevron-right,
+		.fa-caret-square-o-right {
+			font-size: 28px;
+			padding-top: 9px;
+		}
+	}
+	@media screen and (max-width: 320px) {
+		.flip h1,
+		.flip-2 h1,
+		.flip-3 h1,
+		.flip-4 h1,
+		.flip-5 h1,
+		.flip-6 h1 {
+			font-size: 23px;
+		}
+		.fa-angle-double-right,
+		.fa-chevron-circle-right,
+		.fa-chevron-right,
+		.fa-caret-square-o-right {
+			font-size: 25px;
+		}
+		.panel,
+		.panel-2,
+		.panel-3,
+		.panel-4,
+		.panel-5,
+		.panel-6 {
+			padding: 30px;
+		}
+	}
+	/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+	/*
+ * Hide visually and from screen readers
+ */
+	.hidden {
+		display: none !important;
+	}
+	/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+	.visuallyhidden {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+	.visuallyhidden.focusable:active,
+	.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+	/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+	.invisible {
+		visibility: hidden;
+	}
+	/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+	.clearfix:before,
+	.clearfix:after {
+		content: " ";
+		/* 1 */
+		display: table;
+		/* 2 */
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+	@media only screen and (min-width: 35em) {
+		/* Style adjustments for viewports that meet the condition */
+	}
+	@media print,
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 1.25dppx),
+	(min-resolution: 120dpi) {
+		/* Style adjustments for high resolution devices */
+	}
+	/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+	@media print {
+		*,
+		*:before,
+		*:after,
+		*:first-letter,
+		*:first-line {
+			background: transparent !important;
+			color: #000 !important;
+			/* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+			text-shadow: none !important;
+		}
+		a,
+		a:visited {
+			text-decoration: underline;
+		}
+		a[href]:after {
+			content: " (" attr(href) ")";
+		}
+		abbr[title]:after {
+			content: " (" attr(title) ")";
+		}
+		/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+		a[href^="#"]:after,
+		a[href^="javascript:"]:after {
+			content: "";
+		}
+		pre,
+		blockquote {
+			border: 1px solid #999;
+			page-break-inside: avoid;
+		}
+		/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+		thead {
+			display: table-header-group;
+		}
+		tr,
+		img {
+			page-break-inside: avoid;
+		}
+		img {
+			max-width: 100% !important;
+		}
+		p,
+		h2,
+		h3 {
+			orphans: 3;
+			widows: 3;
+		}
+		h2,
+		h3 {
+			page-break-after: avoid;
+		}
+	}

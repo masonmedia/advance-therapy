@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+            background: url(/img/advance-slide-1.jpg) no-repeat center;
+            background-size: cover;
+            
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 15vmin;
+            font-weight: 900;
+            text-shadow: 0 0 10px #444;
+            font-family: Helvetica neue, helvetica, sans-serif;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+        
+        hr {
+            width: 40%;
+            margin: 20px auto;
+        }
+        
+        a {
+            color: #555;
+            font-weight: 900;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+        
+        a:hover {
+            text-shadow: 0 0 4px #000, 0 0 5px #000;
+            color: #fff;
+            transform: scale(1.2);
+        }
+        
+        .error-logo {
+            background: rgba(255, 255, 255, 0.7);
+            background-size: cover;
+            border-radius: 15px;
+            padding: 20px;
+            height: 50px;
+            width: 50px;
+            margin: 30px auto;
+            -webkit-box-shadow: 0 0 10px;
+            box-shadow: 0 0 10px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <hr>
+    <p>Sorry, but the page you were trying to find doesn't exist.</p>
+    <hr>
+    <p>Return to the <a href="http://www.atherapy.ca">Advance Therapy</a> home page.</p>
+    <a href="http://www.atherapy.ca"><img class="error-logo" src="/img/Advance-Therapy-Logo.png"></a>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
