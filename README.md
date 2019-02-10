@@ -6,7 +6,7 @@ For more information see [atherapy.ca](http://atherapy.ca/).
 
 ## **Layout and Frameworks**
 
-The site uses custom css classes built around an atomic/functional css approach. Classes were created to address single-use styles that could be recycled numerous times to support a DRY code approach and lightweight stylesheets.
+The site uses custom css classes built around an atomic/functional css approach. Classes were created to address single-use styles that could be recycled throughout the DOM to support a DRY code approach.
 
 ## **JS**
 
